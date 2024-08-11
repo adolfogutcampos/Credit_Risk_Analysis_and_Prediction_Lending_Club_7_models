@@ -97,5 +97,15 @@ Se ha extraído las líneas más importantes del dataaset para la elaboración d
 | 26  | mort_acc                  | Number of mortgage accounts.                                                |
 | 27  | pub_rec_bankruptcies      | Number of public record bankruptcies.                                       |
 
+# 4.- 📊 Comparacion de 7 modelos
 
+| Modelo                           | Train ROC AUC | Test ROC AUC | Train MSE | Test MSE | Train RMSE | Test RMSE | Train MAE | Test MAE | Train F1 Score | Test F1 Score | Train Precision | Test Precision | Train Recall | Test Recall | Train Balanced Accuracy | Test Balanced Accuracy |
+|----------------------------------|---------------|--------------|-----------|----------|------------|-----------|-----------|----------|----------------|---------------|-----------------|----------------|--------------|-------------|--------------------------|-------------------------|
+| Random Forest                    | 0.50          | 0.50         | 0.18      | 0.18     | 0.42       | 0.42      | 0.18      | 0.18     | 0.90           | 0.90          | 0.82            | 0.82           | 1.00         | 1.00        | 0.50                     | 0.50                    |
+| Gradient Boosting                | 0.54          | 0.52         | 0.17      | 0.18     | 0.41       | 0.42      | 0.17      | 0.18     | 0.91           | 0.90          | 0.83            | 0.83           | 1.00         | 0.99        | 0.54                     | 0.52                    |
+| XGBoost                          | 0.53          | 0.52         | 0.17      | 0.18     | 0.41       | 0.42      | 0.17      | 0.18     | 0.91           | 0.90          | 0.83            | 0.83           | 1.00         | 0.99        | 0.53                     | 0.52                    |
+| ANN                              | 0.73          | 0.59         | 0.16      | 0.21     | 0.40       | 0.46      | 0.28      | 0.33     | 0.86           | 0.83          | 0.88            | 0.84           | 0.85         | 0.81        | 0.65                     | 0.55                    |
+| LSTM                             | 0.50          | 0.51         | 0.15      | 0.15     | 0.38       | 0.38      | 0.29      | 0.29     | 0.90           | 0.90          | 0.82            | 0.82           | 1.00         | 1.00        | 0.50                     | 0.50                    |
+| Genetic Algorithms               | 0.50          | 0.50         | 0.18      | 0.18     | 0.42       | 0.42      | 0.18      | 0.18     | 0.90           | 0.90          | 0.82            | 0.82           | 1.00         | 1.00        | 0.50                     | 0.50                    |
+| Particle Swarm Optimization      | 0.84          | 0.52         | 0.06      | 0.19     | 0.24       | 0.43      | 0.06      | 0.19     | 0.97           | 0.90          | 0.94            | 0.83           | 1.00         | 0.98        | 0.84                     | 0.52                    |
 
